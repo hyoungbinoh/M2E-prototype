@@ -1,0 +1,43 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+
+*::-webkit-scrollbar{
+  display: none;
+}
+
+html {
+  font-size: max(7.12px, min(1.04vh, 0.7vw));
+}
+
+@media screen and (min-width: 425px) and (max-width: 1023px) {
+  html {
+    font-size: max(5.54px, min(1.04vh, 1.31vw));
+  }
+}
+
+.slide-navigation{
+  position: absolute;
+  z-index: 10;
+  top: 744.8vh;
+  right: 17px;
+}
+
+.slide-navigation button:hover {
+  cursor: pointer;
+}
+
+.slide-navigation button:nth-child(1) {
+  display: none;
+}
+
+.slide-navigation button:nth-child(2) {
+  background-color: transparent;
+  background-image: url("../public/img/MoveTop.svg");
+  width: 56px;
+  height: 56px;
+  outline: none;
+  border: none;
+}
+
+.slide-navigation button:nth-child(n+3):nth-child(-n+10) {
+  display: none;
+}
