@@ -10,6 +10,7 @@
    
 ### 2. 사용기술
 * ##### javascript(ES6)
+* ##### css
 * ##### react.js
 * ##### styled-component
 * ##### three.js
