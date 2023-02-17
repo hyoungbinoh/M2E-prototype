@@ -20,5 +20,4 @@
 * AWS(S3)
 <br/><br/>
 
-### 3. 
-https://img.shields.io/badge/{배지이름}-{css컬러}?style={스타일}&logo={로고}&logoColor={로고컬러}
+
