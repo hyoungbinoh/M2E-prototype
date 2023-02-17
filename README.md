@@ -3,7 +3,7 @@
 <br/><br/>
 ![스텝워스크린샷](https://user-images.githubusercontent.com/108599126/219304142-4fd0bb6f-4ed1-46f2-a291-5fefead1241d.PNG)
 <br/><br/>
-* URL: http://www.hyoungbin.shop
+* URL: http://hyoungbin.shop
 <br/><br/>
 
 ### 1. 개발목표   
