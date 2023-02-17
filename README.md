@@ -12,8 +12,9 @@
 <br/><br/>
 
 ### 2. 사용기술
-<img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css&logoColor=white">
-* react.js
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black"> 
+<img src="https://img.shields.io/badge/css-1572B6?style=flat&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white"> 
 * styled-component
 * three.js
 * AWS(S3)
