@@ -15,8 +15,8 @@
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black"> 
 <img src="https://img.shields.io/badge/css-1572B6?style=flat&logo=css3&logoColor=white">
 <img src="https://img.shields.io/badge/react-61DAFB?style=flat&logo=react&logoColor=black"> 
-<img src="https://img.shields.io/badge/styled--components-DB7093?style=flat&logo=styled-components&logoColor=black"> 
-* styled-component
+<img src="https://img.shields.io/badge/threejs-000000?style=flat&logo=threejs&logoColor=white"> 
+
 * three.js
 * AWS(S3)
 <br/><br/>
