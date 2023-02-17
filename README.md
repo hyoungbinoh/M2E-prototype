@@ -12,7 +12,7 @@
 <br/><br/>
 
 ### 2. 사용기술
-* ![javascript](https://user-images.githubusercontent.com/108599126/219593166-4cd3ff13-7fd7-40ba-9fba-3423409fcd0a.svg) javascript(ES6)
+* <img src="https://user-images.githubusercontent.com/108599126/219593166-4cd3ff13-7fd7-40ba-9fba-3423409fcd0a.svg" width="5px" height="5px"> javascript(ES6)
 * css
 * react.js
 * styled-component
