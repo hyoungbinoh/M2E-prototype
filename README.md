@@ -12,8 +12,7 @@
 <br/><br/>
 
 ### 2. 사용기술
-<img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black"> 
-<img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css&logoColor=white"
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css&logoColor=white">
 * react.js
 * styled-component
 * three.js
