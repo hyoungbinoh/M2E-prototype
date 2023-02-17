@@ -12,10 +12,10 @@
 <br/><br/>
 
 ### 2. 사용기술
-<img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black"> HTML 
-<img src="https://img.shields.io/badge/css-1572B6?style=flat&logo=css3&logoColor=white"> CSS
-<img src="https://img.shields.io/badge/react-61DAFB?style=flat&logo=react&logoColor=black"> react.js
-<img src="https://img.shields.io/badge/three.js-000000?style=flat&logo=three.js&logoColor=white"> three.js
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black"> HTML    
+<img src="https://img.shields.io/badge/css-1572B6?style=flat&logo=css3&logoColor=white"> CSS   
+<img src="https://img.shields.io/badge/react-61DAFB?style=flat&logo=react&logoColor=black"> react.js   
+<img src="https://img.shields.io/badge/three.js-000000?style=flat&logo=three.js&logoColor=white"> three.js   
 
 * 
 * AWS(S3)
