@@ -12,7 +12,7 @@
 <br/><br/>
 
 ### 2. 사용기술
-* <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> javascript(ES6)
+* <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black"> javascript(ES6)
 * css
 * react.js
 * styled-component
