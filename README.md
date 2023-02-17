@@ -7,13 +7,13 @@
 <br/><br/>
 
 ### 1. 개발목표   
-회사에서 M2E 서비스가 기획 됨에 따라, 프로토타입의 홈페이지 제작   
-강의를 통해 배운 react.js를 복습하고 응용하는데 목표를 둠
+* 회사에서 M2E 서비스가 기획 됨에 따라, 프로토타입의 홈페이지 제작   
+* 강의를 통해 배운 react.js를 복습하고 응용하는데 목표를 둠
 <br/><br/>
 
 ### 2. 사용기술
-* <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black"> javascript(ES6)
-* css
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black"> 
+<img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css&logoColor=white"
 * react.js
 * styled-component
 * three.js
