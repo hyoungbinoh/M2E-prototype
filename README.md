@@ -9,7 +9,7 @@
 * ##### 강의를 통해 배운 react.js 라이브러리를 복습하고 응용하기 위하여 제작.
 \
 ### 2. 사용기술
-* <p> javascript(ES6) </p>
+* <h2> javascript(ES6) </h2>
 * ##### css
 * ##### react.js
 * ##### styled-component
