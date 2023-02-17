@@ -21,4 +21,4 @@
 <br/><br/>
 
 ### 3. 
-![javascript](https://img.shields.io/badge/JavaScript-#F7DF1E?style=flat&logo=JavaScript&logoColor=white)
+!(https://img.shields.io/badge/JavaScript-#F7DF1E?style=flat&logo=JavaScript&logoColor=white)
