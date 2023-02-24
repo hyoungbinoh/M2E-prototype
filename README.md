@@ -42,7 +42,10 @@ const nextSlide = () => {
 ```
 * useMediaQuery 사용 및 반응형 웹페이지 구현
 <img src="https://user-images.githubusercontent.com/108599126/221123803-f7cc0533-b53f-4125-8d81-cd8b52540513.PNG" width="640" height="340">
-<img src="https://user-images.githubusercontent.com/108599126/221124368-e91e8214-020f-4ab9-b19f-cb35fe8b5e9c.PNG" width="410" height="590"><img src="https://user-images.githubusercontent.com/108599126/221125936-35593655-8f67-4ecc-b210-cf16f12effa5.PNG" width="331.7" height="590">
+<div>
+<img src="https://user-images.githubusercontent.com/108599126/221124368-e91e8214-020f-4ab9-b19f-cb35fe8b5e9c.PNG" width="410" height="590">
+<img src="https://user-images.githubusercontent.com/108599126/221125936-35593655-8f67-4ecc-b210-cf16f12effa5.PNG" width="331.7" height="590">
+</div>
 <br/><br/>
 
 ### 4. 개선사항
