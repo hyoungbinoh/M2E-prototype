@@ -46,6 +46,29 @@ const nextSlide = () => {
 <img src="https://user-images.githubusercontent.com/108599126/221124368-e91e8214-020f-4ab9-b19f-cb35fe8b5e9c.PNG" width="410" height="590">
 <img src="https://user-images.githubusercontent.com/108599126/221125936-35593655-8f67-4ecc-b210-cf16f12effa5.PNG" width="331.7" height="590">
 </div>
+```
+function App() {
+  const isWeb = useMediaQuery({
+    query: "(min-width: 1024px)"
+  })
+
+  const isTablet = useMediaQuery({
+    query: "(max-width: 1023px) and (min-width: 426px)"
+  })
+
+  const isMobile = useMediaQuery({
+    query: "(max-width: 425px)"
+  })
+
+  return (
+    <>
+      {isWeb && <Web />}
+      {isTablet && <Tablet />}
+      {isMobile && <Mobile />}
+    </>
+  );
+};
+```
 <br/><br/>
 
 ### 4. 개선사항
