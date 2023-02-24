@@ -16,22 +16,14 @@
 <br/><br/>
 
 ### 3. 구현기능 
-무한캐러셀 기능 구현
+* 무한캐러셀 기능 구현
 <img src="https://user-images.githubusercontent.com/108599126/221117276-31ec644b-1729-463b-aafe-627a8fbc3460.PNG" width="640" height="340">
-
-import React from "react";
-import { useState, useRef, useEffect, Suspense } from "react";
-import { Canvas } from "@react-three/fiber"
-import styled from "styled-components";
-import WalkerShoe from "../component/WalkerShoe";
-import JoggerShoe from "../component/JoggerShoe";
-import RunnerShoe from "../component/RunnerShoe";
-import AllRounderShoe from "../component/AllRounerderShoe";
-const Slide = () => {
-    const slideRef = useRef(null);
+\\\
+const slideRef = useRef(null);
     const [currentImg, setCurrentImg] = useState(0);
     const IMG_WIDTH = 54;
     const slideRange = currentImg * IMG_WIDTH;
+
     useEffect(() => {
         currentImg === 0 ? slideRef.current.style.transition = "" : slideRef.current.style.transition = "all 0.5s ease-in-out";
         slideRef.current.style.transform = `translateX(-${slideRange}rem)`;
@@ -43,112 +35,15 @@ const Slide = () => {
         }
     }, [currentImg]
     );
+
     const nextSlide = () => {
         if (currentImg === 4) return;
         setCurrentImg(currentImg + 1);
     };
-    return (
-        <Body>
-            <Container>
-                <Wrapper ref={slideRef} >
-                    <InfoBox>
-                        <CanvasWrap>
-                            <Canvas>
-                                <Suspense fallback={null}>
-                                    <WalkerShoe />
-                                </Suspense>
-                            </Canvas>
-                        </CanvasWrap>
-                        <Infomation>
-                            <ShoeType src="img/Walker.svg" alt="Walker" style={{ width: "10.5rem" }} />
-                            <ShoeDistance src="img/1-5km.svg" alt="1-5km/h" style={{ width: "12.3rem" }} />
-                        </Infomation>
-                    </InfoBox>
-                    <InfoBox>
-                        <CanvasWrap >
-                            <Canvas>
-                                <Suspense fallback={null}>
-                                    <JoggerShoe />
-                                </Suspense>
-                            </Canvas>
-                        </CanvasWrap>
-                        <Infomation>
-                            <JoggerType src="img/Jogger.svg" alt="Jogger" style={{ width: "12.6rem" }} />
-                            <JoggerDistance src="img/5-10km.svg" alt="5-10km/h" style={{ width: "13.7rem" }} />
-                        </Infomation>
-                    </InfoBox>
-                    <InfoBox>
-                        <CanvasWrap >
-                            <Canvas>
-                                <Suspense fallback={null}>
-                                    <RunnerShoe />
-                                </Suspense>
-                            </Canvas>
-                        </CanvasWrap>
-                        <Infomation>
-                            <ShoeType src="img/Runner.svg" alt="Runner" style={{ width: "10.9rem" }} />
-                            <ShoeDistance src="img/8-18km.svg" alt="8-18km/h" style={{ width: "13.8rem" }} />
-                        </Infomation>
-                    </InfoBox>
-                    <InfoBox>
-                        <CanvasWrap >
-                            <Canvas>
-                                <Suspense fallback={null}>
-                                    <AllRounderShoe />
-                                </Suspense>
-                            </Canvas>
-                        </CanvasWrap>
-                        <Infomation>
-                            <ShoeType src="img/AllRounder.svg" alt="AllRounder" style={{ width: "18.5rem" }} />
-                            <ShoeDistance src="img/1-18km.svg" alt="1-18km/h" style={{ width: "13.3rem" }} />
-                        </Infomation>
-                    </InfoBox>
-                    <InfoBox>
-                        <CanvasWrap>
-                            <Canvas>
-                                <Suspense fallback={null}>
-                                    <WalkerShoe />
-                                </Suspense>
-                            </Canvas>
-                        </CanvasWrap>
-                        <Infomation>
-                            <ShoeType src="img/Walker.svg" alt="Walker" style={{ width: "10.5rem" }} />
-                            <ShoeDistance src="img/1-5km.svg" alt="1-5km/h" style={{ width: "12.3rem" }} />
-                        </Infomation>
-                    </InfoBox>
-                    <InfoBox>
-                        <CanvasWrap >
-                            <Canvas>
-                                <Suspense fallback={null}>
-                                    <JoggerShoe />
-                                </Suspense>
-                            </Canvas>
-                        </CanvasWrap>
-                        <Infomation>
-                            <JoggerType src="img/Jogger.svg" alt="Jogger" style={{ width: "12.6rem" }} />
-                            <JoggerDistance src="img/5-10km.svg" alt="5-10km/h" style={{ width: "13.7rem" }} />
-                        </Infomation>
-                    </InfoBox>
-                    <InfoBox>
-                        <CanvasWrap >
-                            <Canvas>
-                                <Suspense fallback={null}>
-                                    <RunnerShoe />
-                                </Suspense>
-                            </Canvas>
-                        </CanvasWrap>
-                        <Infomation>
-                            <ShoeType src="img/Runner.svg" alt="Runner" style={{ width: "10.9rem" }} />
-                            <ShoeDistance src="img/8-18km.svg" alt="8-18km/h" style={{ width: "13.8rem" }} />
-                        </Infomation>
-                    </InfoBox>
-                </Wrapper>
-            </Container>
-            <ButtonContainer>
-                <Button onClick={nextSlide}><img src="img/SlideNarrow.svg" alt="SlideNarrow" /></Button>
-            </ButtonContainer>
-        </Body>
-    )
-}
+    \\\
+<br/><br/>
 
 ### 4. 개선사항
+* 상세페이지 제작 필요
+* 메모리를 많이 차지하는 문제 개선 필요
+<br/><br/>
