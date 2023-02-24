@@ -23,18 +23,15 @@ import React from "react";
 import { useState, useRef, useEffect, Suspense } from "react";
 import { Canvas } from "@react-three/fiber"
 import styled from "styled-components";
-
 import WalkerShoe from "../component/WalkerShoe";
 import JoggerShoe from "../component/JoggerShoe";
 import RunnerShoe from "../component/RunnerShoe";
 import AllRounderShoe from "../component/AllRounerderShoe";
-
 const Slide = () => {
     const slideRef = useRef(null);
     const [currentImg, setCurrentImg] = useState(0);
     const IMG_WIDTH = 54;
     const slideRange = currentImg * IMG_WIDTH;
-
     useEffect(() => {
         currentImg === 0 ? slideRef.current.style.transition = "" : slideRef.current.style.transition = "all 0.5s ease-in-out";
         slideRef.current.style.transform = `translateX(-${slideRange}rem)`;
@@ -46,14 +43,10 @@ const Slide = () => {
         }
     }, [currentImg]
     );
-
     const nextSlide = () => {
         if (currentImg === 4) return;
         setCurrentImg(currentImg + 1);
     };
-
-
-
     return (
         <Body>
             <Container>
