@@ -18,6 +18,7 @@
 ### 3. 구현기능
 ##### 무한캐러셀 기능
 <img src="https://user-images.githubusercontent.com/108599126/221117276-31ec644b-1729-463b-aafe-627a8fbc3460.PNG" width="320" height="170">
+
 ### 4. 배운 점
 
 ### 5. 아쉬운 점
