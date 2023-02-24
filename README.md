@@ -21,28 +21,30 @@
 
 ```
 const slideRef = useRef(null);
-    const [currentImg, setCurrentImg] = useState(0);
-    const IMG_WIDTH = 54;
-    const slideRange = currentImg * IMG_WIDTH;
-    useEffect(() => {
-        currentImg === 0 ? slideRef.current.style.transition = "" : slideRef.current.style.transition = "all 0.5s ease-in-out";
-        slideRef.current.style.transform = `translateX(-${slideRange}rem)`;
-        const timer = setInterval(() => {
-            setCurrentImg(prev => (prev === 4 ? 0 : prev));
-        }, 500)
-        return () => {
-            clearInterval(timer);
-        }
-    }, [currentImg]
+const [currentImg, setCurrentImg] = useState(0);
+const IMG_WIDTH = 54;
+const slideRange = currentImg * IMG_WIDTH;
+useEffect(() => {
+    currentImg === 0 ? slideRef.current.style.transition = "" : slideRef.current.style.transition = "all 0.5s ease-in-out";
+    slideRef.current.style.transform = `translateX(-${slideRange}rem)`;
+    const timer = setInterval(() => {
+        setCurrentImg(prev => (prev === 4 ? 0 : prev));
+    }, 500)
+    return () => {
+        clearInterval(timer);
+    }
+}, [currentImg]
     );
-    const nextSlide = () => {
-        if (currentImg === 4) return;
-        setCurrentImg(currentImg + 1);
-    };
+const nextSlide = () => {
+    if (currentImg === 4) return;
+    setCurrentImg(currentImg + 1);
+};
 ```
+* useMediaQuery 사용 및 반응형 웹페이지 구현
+<img src="https://user-images.githubusercontent.com/108599126/221123803-f7cc0533-b53f-4125-8d81-cd8b52540513.PNG" width="640" height="340">
+<img src="https://user-images.githubusercontent.com/108599126/221124368-e91e8214-020f-4ab9-b19f-cb35fe8b5e9c.PNG" width="410" height="590"><img src="https://user-images.githubusercontent.com/108599126/221125936-35593655-8f67-4ecc-b210-cf16f12effa5.PNG" width="331.7" height="590">
 <br/><br/>
 
 ### 4. 개선사항
 * 상세페이지 제작 필요
 * 메모리를 많이 차지하는 문제 개선 필요
-<br/><br/>
