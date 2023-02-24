@@ -18,12 +18,12 @@
 ### 3. 구현기능 
 * 무한캐러셀 기능 구현
 <img src="https://user-images.githubusercontent.com/108599126/221117276-31ec644b-1729-463b-aafe-627a8fbc3460.PNG" width="640" height="340">
+
 ```
 const slideRef = useRef(null);
     const [currentImg, setCurrentImg] = useState(0);
     const IMG_WIDTH = 54;
     const slideRange = currentImg * IMG_WIDTH;
-
     useEffect(() => {
         currentImg === 0 ? slideRef.current.style.transition = "" : slideRef.current.style.transition = "all 0.5s ease-in-out";
         slideRef.current.style.transform = `translateX(-${slideRange}rem)`;
@@ -35,7 +35,6 @@ const slideRef = useRef(null);
         }
     }, [currentImg]
     );
-
     const nextSlide = () => {
         if (currentImg === 4) return;
         setCurrentImg(currentImg + 1);
