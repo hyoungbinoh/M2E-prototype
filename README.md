@@ -18,7 +18,7 @@
 ### 3. 구현기능 
 * 무한캐러셀 기능 구현
 <img src="https://user-images.githubusercontent.com/108599126/221117276-31ec644b-1729-463b-aafe-627a8fbc3460.PNG" width="640" height="340">
-\\\
+```
 const slideRef = useRef(null);
     const [currentImg, setCurrentImg] = useState(0);
     const IMG_WIDTH = 54;
@@ -40,7 +40,7 @@ const slideRef = useRef(null);
         if (currentImg === 4) return;
         setCurrentImg(currentImg + 1);
     };
-    \\\
+```
 <br/><br/>
 
 ### 4. 개선사항
