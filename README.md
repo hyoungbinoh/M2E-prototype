@@ -16,6 +16,7 @@
 * 웹 디자이너 2명
 * 3D 디자이너 1명
 * 프론트엔드 개발자 1명(본인)
+<br/><br/>
 
 ### 3. 사용기술
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Styled--Components-DB7093?style=flat&logo=styled-components&logoColor=black"> <img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/Three.js-000000?style=flat&logo=three.js&logoColor=white"> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon AWS&logoColor=white"> <img src="https://img.shields.io/badge/AWS S3-569A31?style=flat&logo=amazon s3&logoColor=white">
@@ -120,7 +121,9 @@ const WalkerShoe = () => {
 ### 5. 문제해결
 * 처음에 무한 캐러셀을 만들 때 마지막 이미지에서 처음 이미지로 가는 방법에 대한 고민이 있었습니다. 이에 처음과 마지막 이미지 복제본을 만든 후 마지막 이미지 옆에 첫 이미지 복제본을 두고, 첫 이미지 복제본에 도착하면 setTimeout으로 첫 이미지로 가는 방법을 생각하고 적용하여 무한 캐러셀을 만들었습니다.
 * Three.js 기본 값에는 3D 파일을 클릭 후 움직여야 이미지가 돌아가는데, 저희는 마우스오버가 되면 이미지가 마우스를 따라가며 돌아가도록 만드려고 하였습니다. 이에 마우스의 X값과 Y값을 따로 정의해줘서 3D 이미지가 따라갈 수 있도록 만들어주었습니다.
+<br/><br/>
 
 ### 6. 개선사항
 * 상세페이지가 존재하지 않음(React Router, Redux Toolkit 사용이 어려움)
 * 메모리를 많이 차지하여 느려지는 문제 개선 필요
+<br/><br/>
