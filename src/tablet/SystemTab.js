@@ -2,51 +2,51 @@ import React from "react";
 import styled from "styled-components";
 
 const SystemTab = () => {
-    return(
-        <>
-        <Title>StepWAR System</Title>
-          <SystemWrap>
-            <SystemInfo>
-              <h3>Random Box</h3>
-              <img src="img/RandomBox.svg" alt="RandomBox"/> 
-              <hr/>
-              <p>Coming Soon...</p>
-            </SystemInfo>
-            <SystemInfo>
-              <h3>Collection</h3>
-              <img src="img/Collection.svg" alt="Collection"/> 
-              <hr/>
-              <p>Coming Soon...</p>
-            </SystemInfo>
-            <SystemInfo>
-              <h3>Staking</h3>
-              <img src="img/Stacking.svg" alt="Staking"/> 
-              <hr/>
-              <p>Coming Soon...</p>
-            </SystemInfo>
-          </SystemWrap>
-          <SystemWrap>
-            <SystemInfo>
-              <h3>Generation</h3>
-              <img src="img/Generation.svg" alt="Generation"/>  
-              <hr/>
-              <p>Coming Soon...</p>
-            </SystemInfo> 
-            <SystemInfo>
-              <h3>Green Zone</h3>
-              <img src="img/GreenZone.svg" alt="GreenZone"/>  
-              <hr/>
-              <p>Coming Soon...</p>            
-            </SystemInfo>  
-            <SystemInfo>
-              <h3>AR</h3>
-              <img src="img/AR.svg" alt="AR"/> 
-              <hr/>
-              <p>Coming Soon...</p>              
-            </SystemInfo>  
-          </SystemWrap>
-          </>
-    );
+  return (
+    <>
+      <Title>StepWAR System</Title>
+      <SystemWrap>
+        <SystemInfo>
+          <h3>Random Box</h3>
+          <img src="img/RandomBox.svg" alt="RandomBox" />
+          <hr />
+          <p>Coming Soon...</p>
+        </SystemInfo>
+        <SystemInfo>
+          <h3>Collection</h3>
+          <img src="img/Collection.svg" alt="Collection" />
+          <hr />
+          <p>Coming Soon...</p>
+        </SystemInfo>
+        <SystemInfo>
+          <h3>Staking</h3>
+          <img src="img/Stacking.svg" alt="Staking" />
+          <hr />
+          <p>Coming Soon...</p>
+        </SystemInfo>
+      </SystemWrap>
+      <SystemWrap>
+        <SystemInfo>
+          <h3>Generation</h3>
+          <img src="img/Generation.svg" alt="Generation" />
+          <hr />
+          <p>Coming Soon...</p>
+        </SystemInfo>
+        <SystemInfo>
+          <h3>Green Zone</h3>
+          <img src="img/GreenZone.svg" alt="GreenZone" />
+          <hr />
+          <p>Coming Soon...</p>
+        </SystemInfo>
+        <SystemInfo>
+          <h3>AR</h3>
+          <img src="img/AR.svg" alt="AR" />
+          <hr />
+          <p>Coming Soon...</p>
+        </SystemInfo>
+      </SystemWrap>
+    </>
+  );
 };
 
 const Title = styled.h2`

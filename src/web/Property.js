@@ -1,20 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import {useEffect, useState} from "react"
+import { useEffect, useState } from "react"
 
 const Property = () => {
     const [position, setPosition] = useState(0);
 
-    function onScroll(){
+    function onScroll() {
         setPosition(window.scrollY);
     }
-  
+
     const viewport = window.innerHeight
-  
+
     useEffect(() => {
-        window.addEventListener('scroll',onScroll)
-        return() => {
-            window.removeEventListener('scroll',onScroll)
+        window.addEventListener('scroll', onScroll)
+        return () => {
+            window.removeEventListener('scroll', onScroll)
         }
     }, [])
 
@@ -24,16 +24,16 @@ const Property = () => {
     const GetClick = (e) => {
         setCurrentClick(e.target.id);
     }
-    
+
     let shoeProperty;
-    
+
     useEffect(
         (e) => {
-            if(currentClick !== null) {
+            if (currentClick !== null) {
                 var current = document.getElementById(currentClick);
                 current.style.opacity = "1";
             }
-            if(prevClick !== null) {
+            if (prevClick !== null) {
                 var prev = document.getElementById(prevClick);
                 prev.style.opacity = "0.5";
             }
@@ -41,55 +41,55 @@ const Property = () => {
         },
         [currentClick]
     );
-    
-    if(currentClick === "water"){
-        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/WaterEffect.mp4" type="video/mp4"/>
-    } else if(currentClick === "thunder"){
-        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/ThunderEffect.mp4" type="video/mp4"/>
-    } else if(currentClick === "fire"){
-        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/FireEffect.mp4" type="video/mp4"/>
-    } else if(currentClick === "ground"){
-        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/GroundEffect.mp4" type="video/mp4"/>
-    } else {shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/FireEffect.mp4" type="video/mp4"/>}
+
+    if (currentClick === "water") {
+        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/WaterEffect.mp4" type="video/mp4" />
+    } else if (currentClick === "thunder") {
+        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/ThunderEffect.mp4" type="video/mp4" />
+    } else if (currentClick === "fire") {
+        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/FireEffect.mp4" type="video/mp4" />
+    } else if (currentClick === "ground") {
+        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/GroundEffect.mp4" type="video/mp4" />
+    } else { shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/FireEffect.mp4" type="video/mp4" /> }
 
 
-    return(
+    return (
         <>
-            <Rock1 src="img/Rock1.png" alt="Rock"/>
-            <Shoe style={position >= viewport*2 - 500 & position < viewport*3 - 10 ? { opacity:"1"} : {opacity:"0"}}>
+            <Rock1 src="img/Rock1.png" alt="Rock" />
+            <Shoe style={position >= viewport * 2 - 500 & position < viewport * 3 - 10 ? { opacity: "1" } : { opacity: "0" }}>
                 {shoeProperty}
             </Shoe>
-            <Rock2 src="img/Rock22.svg" alt="Rock22"/>
-            <Water id="water" style={position >= viewport*2 - 500 && position < viewport*3 - 10 ? {top:"calc(50% - 43.5rem)", opacity:"0.5"} : {top:"calc(50% - 40.5rem)", opacity:"0"}}>
-                <WaterTitle src="img/Water.svg" alt="Water"/>
+            <Rock2 src="img/Rock22.svg" alt="Rock22" />
+            <Water style={position >= viewport * 2 - 500 && position < viewport * 3 - 10 ? { top: "calc(50% - 43.5rem)", opacity: "0.5" } : { top: "calc(50% - 40.5rem)", opacity: "0" }}>
+                <WaterTitle src="img/Water.svg" alt="Water" />
                 <button onClick={GetClick}>
-                    <img id="water" src="img/WaterProperty.svg" alt="WaterProperty"/>
+                    <img id="water" src="img/WaterProperty.svg" alt="WaterProperty" />
                 </button>
             </Water>
-            <Rock3 src="img/Rock22.svg" alt="Rock22"/>
-            <Thunder id="thunder" style={position >= viewport*2 - 500 && position < viewport*3 - 10 ? {top:"calc(50% + 13rem)", opacity:"0.5"} : {top:"calc(50% + 16rem)", opacity:"0"}}>
-                <ThunderTitle src="img/Thunder.svg" alt="Thunder"/>
+            <Rock3 src="img/Rock22.svg" alt="Rock22" />
+            <Thunder style={position >= viewport * 2 - 500 && position < viewport * 3 - 10 ? { top: "calc(50% + 13rem)", opacity: "0.5" } : { top: "calc(50% + 16rem)", opacity: "0" }}>
+                <ThunderTitle src="img/Thunder.svg" alt="Thunder" />
                 <button onClick={GetClick}>
-                    <img id="thunder" src="img/ThunderProperty.svg" alt="ThunderProperty"/>
+                    <img id="thunder" src="img/ThunderProperty.svg" alt="ThunderProperty" />
                 </button>
             </Thunder>
-            <Rock4 src="img/Rock22.svg" alt="Rock22"/>
-            <Fire id="fire" style={position >= viewport*2 - 500 && position < viewport*3 - 10 ? {top:"calc(50% + 16rem)", opacity:"0.5"} : {top:"calc(50% + 19rem)", opacity:"0"}}>
-                <FireTitle src="img/Fire.svg" alt="Fire"/>
+            <Rock4 src="img/Rock22.svg" alt="Rock22" />
+            <Fire style={position >= viewport * 2 - 500 && position < viewport * 3 - 10 ? { top: "calc(50% + 16rem)", opacity: "0.5" } : { top: "calc(50% + 19rem)", opacity: "0" }}>
+                <FireTitle src="img/Fire.svg" alt="Fire" />
                 <button onClick={GetClick}>
-                    <img id="fire" src="img/FireProperty.svg" alt="FireProperty"/>
+                    <img id="fire" src="img/FireProperty.svg" alt="FireProperty" />
                 </button>
             </Fire>
-            <Rock5 src="img/Rock22.svg" alt="Rock22"/>
-            <Ground id="ground" style={position >= viewport*2 - 500 && position < viewport*3 - 10 ? {top:"calc(50% - 32rem)", opacity:"0.5"} : {top:"calc(50% - 29rem)", opacity:"0"}}>
-                <GroundTitle src="img/Ground.svg" alt="Ground"/>
+            <Rock5 src="img/Rock22.svg" alt="Rock22" />
+            <Ground style={position >= viewport * 2 - 500 && position < viewport * 3 - 10 ? { top: "calc(50% - 32rem)", opacity: "0.5" } : { top: "calc(50% - 29rem)", opacity: "0" }}>
+                <GroundTitle src="img/Ground.svg" alt="Ground" />
                 <button onClick={GetClick}>
-                    <img id="ground" src="img/GroundProperty.svg" alt="GroundProperty"/>
+                    <img id="ground" src="img/GroundProperty.svg" alt="GroundProperty" />
                 </button>
             </Ground>
         </>
     );
-    
+
 };
 
 const ShoeProperty = styled.video`

@@ -15,70 +15,70 @@ import FooterMo from "./FooterMo";
 import BackgroundMo from "./BackgroundMo";
 
 const Mobile = () => {
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const updateScroll = () => {
-      setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-    };
-    useEffect(() => {
-      window.addEventListener('scroll', updateScroll)
-    })
-  
-    const [Menu, SetMenu] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const updateScroll = () => {
+    setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', updateScroll)
+  })
 
-    return(
-        <Body>
-            <HeaderMo style={scrollPosition === 0 ? {background : "transparent"} : {background : "linear-gradient(rgba(17, 17, 17, 1), rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0))"}}>
-                <HeaderWrap>
-                    <Logo>
-                    <a href="/"><img src="img/Logo.svg" alt=""/></a>
-                    </Logo>
-                    <HambergerBar>
-                    <button onClick={()=>{SetMenu((e)=>!e)}}><img src={Menu ? "img/XBar.svg" : "img/HambergerBar.svg"} alt="discord"/></button>
-                    </HambergerBar>
-                </HeaderWrap>
-            </HeaderMo>
-            <BackgroundMo/>
-            {Menu ? 
-                <HeaderPage/> :
-            <>
-                <Container>
-                    <Wrapper>
-                        <MainMo/>
-                    </Wrapper>
-                </Container>
-                <ContainerMo>
-                    <TypeMo/>
-                </ContainerMo>
-                <ContainerMo>
-                    <PropertyMo/>
-                </ContainerMo>
-                <ContainerMo>
-                    <SystemMo/>
-                </ContainerMo>
-                <ContainerMo>
-                    <TokenMo/>
-                </ContainerMo>
-                <ContainerMo>
-                    <RoadmapMo/>
-                </ContainerMo>
-                <ContainerMo>
-                    <PartnerMo/>
-                    <ToTop onClick={() => {
-                        window.scrollTo({
-                            top: 0, left: 0, behavior: 'smooth'
-                        })
-                    }}>
-                        <img src="img/MoveTop.svg" alt="top-btn"/>
-                    </ToTop>
-                </ContainerMo>
-                <ContainerMo>
-                    <FooterMo/>
-                </ContainerMo>
-            </>
-            }
+  const [Menu, SetMenu] = useState(false);
 
-        </Body>
-    )
+  return (
+    <Body>
+      <HeaderMo style={scrollPosition === 0 ? { background: "transparent" } : { background: "linear-gradient(rgba(17, 17, 17, 1), rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0))" }}>
+        <HeaderWrap>
+          <Logo>
+            <a href="/"><img src="img/Logo.svg" alt="" /></a>
+          </Logo>
+          <HambergerBar>
+            <button onClick={() => { SetMenu((e) => !e) }}><img src={Menu ? "img/XBar.svg" : "img/HambergerBar.svg"} alt="discord" /></button>
+          </HambergerBar>
+        </HeaderWrap>
+      </HeaderMo>
+      <BackgroundMo />
+      {Menu ?
+        <HeaderPage /> :
+        <>
+          <Container>
+            <Wrapper>
+              <MainMo />
+            </Wrapper>
+          </Container>
+          <ContainerMo>
+            <TypeMo />
+          </ContainerMo>
+          <ContainerMo>
+            <PropertyMo />
+          </ContainerMo>
+          <ContainerMo>
+            <SystemMo />
+          </ContainerMo>
+          <ContainerMo>
+            <TokenMo />
+          </ContainerMo>
+          <ContainerMo>
+            <RoadmapMo />
+          </ContainerMo>
+          <ContainerMo>
+            <PartnerMo />
+            <ToTop onClick={() => {
+              window.scrollTo({
+                top: 0, left: 0, behavior: 'smooth'
+              })
+            }}>
+              <img src="img/MoveTop.svg" alt="top-btn" />
+            </ToTop>
+          </ContainerMo>
+          <ContainerMo>
+            <FooterMo />
+          </ContainerMo>
+        </>
+      }
+
+    </Body>
+  )
 }
 
 const Body = styled.div`
@@ -126,7 +126,7 @@ const ToTop = styled.div`
     right: 10px;
 `
 
-const HeaderMo =  styled.div`
+const HeaderMo = styled.div`
   position: fixed;
   width: 100%;
   height: 80px;
@@ -143,12 +143,12 @@ const HeaderWrap = styled.div`
   align-items: center;
 `
 
-const Logo =  styled.div`
+const Logo = styled.div`
   margin: 0px 28vw;
   transition: all 2s ease;
 `
 
-const HambergerBar =  styled.div`
+const HambergerBar = styled.div`
   margin: 0px 24vw;
   transition: all 2s ease;
   display: flex;

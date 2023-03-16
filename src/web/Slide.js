@@ -1,6 +1,6 @@
 import React from "react";
-import {useState, useRef, useEffect, Suspense} from "react";
-import {Canvas} from "@react-three/fiber"
+import { useState, useRef, useEffect, Suspense } from "react";
+import { Canvas } from "@react-three/fiber"
 import styled from "styled-components";
 
 import WalkerShoe from "../component/WalkerShoe";
@@ -17,7 +17,7 @@ const Slide = () => {
     useEffect(() => {
         currentImg === 0 ? slideRef.current.style.transition = "" : slideRef.current.style.transition = "all 0.5s ease-in-out";
         slideRef.current.style.transform = `translateX(-${slideRange}rem)`;
-        const timer =  setInterval(() => {
+        const timer = setInterval(() => {
             setCurrentImg(prev => (prev === 4 ? 0 : prev));
         }, 500)
         return () => {
@@ -33,107 +33,107 @@ const Slide = () => {
 
 
 
-    return(
+    return (
         <Body>
             <Container>
-                <Wrapper ref={slideRef} >   
+                <Wrapper ref={slideRef} >
                     <InfoBox>
                         <CanvasWrap>
                             <Canvas>
                                 <Suspense fallback={null}>
-                                    <WalkerShoe/>
+                                    <WalkerShoe />
                                 </Suspense>
                             </Canvas>
                         </CanvasWrap>
                         <Infomation>
-                            <ShoeType src="img/Walker.svg" alt="Walker" style={{width: "10.5rem"}}/>
-                            <ShoeDistance src="img/1-5km.svg" alt="1-5km/h" style={{width: "12.3rem"}}/>
+                            <ShoeType src="img/Walker.svg" alt="Walker" style={{ width: "10.5rem" }} />
+                            <ShoeDistance src="img/1-5km.svg" alt="1-5km/h" style={{ width: "12.3rem" }} />
                         </Infomation>
                     </InfoBox>
                     <InfoBox>
                         <CanvasWrap >
                             <Canvas>
                                 <Suspense fallback={null}>
-                                    <JoggerShoe/>
+                                    <JoggerShoe />
                                 </Suspense>
                             </Canvas>
                         </CanvasWrap>
                         <Infomation>
-                            <JoggerType src="img/Jogger.svg" alt="Jogger" style={{width: "12.6rem"}}/>
-                            <JoggerDistance src="img/5-10km.svg" alt="5-10km/h" style={{width: "13.7rem"}}/>
+                            <JoggerType src="img/Jogger.svg" alt="Jogger" style={{ width: "12.6rem" }} />
+                            <JoggerDistance src="img/5-10km.svg" alt="5-10km/h" style={{ width: "13.7rem" }} />
                         </Infomation>
                     </InfoBox>
                     <InfoBox>
                         <CanvasWrap >
                             <Canvas>
                                 <Suspense fallback={null}>
-                                    <RunnerShoe/>
+                                    <RunnerShoe />
                                 </Suspense>
                             </Canvas>
                         </CanvasWrap>
                         <Infomation>
-                            <ShoeType src="img/Runner.svg" alt="Runner" style={{width: "10.9rem"}}/>
-                            <ShoeDistance src="img/8-18km.svg" alt="8-18km/h" style={{width: "13.8rem"}}/>
+                            <ShoeType src="img/Runner.svg" alt="Runner" style={{ width: "10.9rem" }} />
+                            <ShoeDistance src="img/8-18km.svg" alt="8-18km/h" style={{ width: "13.8rem" }} />
                         </Infomation>
                     </InfoBox>
                     <InfoBox>
                         <CanvasWrap >
                             <Canvas>
                                 <Suspense fallback={null}>
-                                    <AllRounderShoe/>
+                                    <AllRounderShoe />
                                 </Suspense>
                             </Canvas>
                         </CanvasWrap>
                         <Infomation>
-                            <ShoeType src="img/AllRounder.svg" alt="AllRounder" style={{width: "18.5rem"}}/>
-                            <ShoeDistance src="img/1-18km.svg" alt="1-18km/h" style={{width: "13.3rem"}}/>
+                            <ShoeType src="img/AllRounder.svg" alt="AllRounder" style={{ width: "18.5rem" }} />
+                            <ShoeDistance src="img/1-18km.svg" alt="1-18km/h" style={{ width: "13.3rem" }} />
                         </Infomation>
                     </InfoBox>
                     <InfoBox>
-                    <CanvasWrap>
-                        <Canvas>
-                            <Suspense fallback={null}>
-                                <WalkerShoe/>
-                            </Suspense>
-                        </Canvas>
-                    </CanvasWrap>
+                        <CanvasWrap>
+                            <Canvas>
+                                <Suspense fallback={null}>
+                                    <WalkerShoe />
+                                </Suspense>
+                            </Canvas>
+                        </CanvasWrap>
                         <Infomation>
-                            <ShoeType src="img/Walker.svg" alt="Walker" style={{width: "10.5rem"}}/>
-                            <ShoeDistance src="img/1-5km.svg" alt="1-5km/h" style={{width: "12.3rem"}}/>
+                            <ShoeType src="img/Walker.svg" alt="Walker" style={{ width: "10.5rem" }} />
+                            <ShoeDistance src="img/1-5km.svg" alt="1-5km/h" style={{ width: "12.3rem" }} />
                         </Infomation>
                     </InfoBox>
                     <InfoBox>
                         <CanvasWrap >
                             <Canvas>
                                 <Suspense fallback={null}>
-                                    <JoggerShoe/>
+                                    <JoggerShoe />
                                 </Suspense>
                             </Canvas>
                         </CanvasWrap>
                         <Infomation>
-                            <JoggerType src="img/Jogger.svg" alt="Jogger" style={{width: "12.6rem"}}/>
-                            <JoggerDistance src="img/5-10km.svg" alt="5-10km/h" style={{width: "13.7rem"}}/>
+                            <JoggerType src="img/Jogger.svg" alt="Jogger" style={{ width: "12.6rem" }} />
+                            <JoggerDistance src="img/5-10km.svg" alt="5-10km/h" style={{ width: "13.7rem" }} />
                         </Infomation>
                     </InfoBox>
                     <InfoBox>
                         <CanvasWrap >
                             <Canvas>
                                 <Suspense fallback={null}>
-                                    <RunnerShoe/>
+                                    <RunnerShoe />
                                 </Suspense>
                             </Canvas>
                         </CanvasWrap>
                         <Infomation>
-                            <ShoeType src="img/Runner.svg" alt="Runner"  style={{width: "10.9rem"}}/>
-                            <ShoeDistance src="img/8-18km.svg" alt="8-18km/h" style={{width: "13.8rem"}}/>
+                            <ShoeType src="img/Runner.svg" alt="Runner" style={{ width: "10.9rem" }} />
+                            <ShoeDistance src="img/8-18km.svg" alt="8-18km/h" style={{ width: "13.8rem" }} />
                         </Infomation>
                     </InfoBox>
-                </Wrapper> 
+                </Wrapper>
             </Container>
             <ButtonContainer>
-                <Button onClick={nextSlide}><img src="img/SlideNarrow.svg" alt="SlideNarrow"/></Button>
+                <Button onClick={nextSlide}><img src="img/SlideNarrow.svg" alt="SlideNarrow" /></Button>
             </ButtonContainer>
-        </Body>    
+        </Body>
     )
 
 }

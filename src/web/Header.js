@@ -1,5 +1,5 @@
 import React from "react";
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const Header = () => {
@@ -11,26 +11,26 @@ const Header = () => {
     window.addEventListener('scroll', updateScroll)
   })
 
-  return(
-    <Container style={scrollPosition === 0 ? {background : "transparent"} : {background : "linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0))"}}>
+  return (
+    <Container style={scrollPosition === 0 ? { background: "transparent" } : { background: "linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0))" }}>
       <Wrapper>
         <Logo>
-          <a href="/"><img src="img/Logo.svg" alt=""/></a>
+          <a href="/"><img src="img/Logo.svg" alt="" /></a>
         </Logo>
         <Business>
-          <a href="#"><img src="img/MarketPlace.svg" alt="marketplace"/></a>
-          <a href="#"><img src="img/WhitePapers.svg" alt="whitepapers"/></a>
+          <a href="#"><img src="img/MarketPlace.svg" alt="marketplace" /></a>
+          <a href="#"><img src="img/WhitePapers.svg" alt="whitepapers" /></a>
         </Business>
         <SocialNetworks>
-          <a href="#"><img src="img/Discord.svg" alt="discord"/></a>
-          <a href="#"><img src="img/Twitter.svg" alt="Twitter"/></a> 
+          <a href="#"><img src="img/Discord.svg" alt="discord" /></a>
+          <a href="#"><img src="img/Twitter.svg" alt="Twitter" /></a>
         </SocialNetworks>
       </Wrapper>
     </Container>
   );
 };
 
-const Container =  styled.div`
+const Container = styled.div`
   position: fixed;
   width: 100%;
   height: 80px;
@@ -47,7 +47,7 @@ const Wrapper = styled.div`
   align-items: center;
 `
 
-const Logo =  styled.div`
+const Logo = styled.div`
   margin: 0px min(330px, 22.92vw);
   transition: all 2s ease;
 `
@@ -59,7 +59,7 @@ const Business = styled.div`
   }
 `
 
-const SocialNetworks =  styled.div`
+const SocialNetworks = styled.div`
   margin: 0px min(330px, 22.92vw);
   transition: all 2s ease;
   display: flex;

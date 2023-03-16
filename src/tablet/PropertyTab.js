@@ -1,20 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 const PropertyTab = () => {
     const [position, setPosition] = useState(0);
 
-    function onScroll(){
+    function onScroll() {
         setPosition(window.scrollY);
     }
-  
+
     const viewport = window.innerHeight
-  
+
     useEffect(() => {
-        window.addEventListener('scroll',onScroll)
-        return() => {
-            window.removeEventListener('scroll',onScroll)
+        window.addEventListener('scroll', onScroll)
+        return () => {
+            window.removeEventListener('scroll', onScroll)
         }
     }, [])
 
@@ -24,16 +24,16 @@ const PropertyTab = () => {
     const GetClick = (e) => {
         setCurrentClick(e.target.id);
     }
-    
+
     let shoeProperty;
-    
+
     useEffect(
         (e) => {
-            if(currentClick !== null) {
+            if (currentClick !== null) {
                 var current = document.getElementById(currentClick);
                 current.style.opacity = "1";
             }
-            if(prevClick !== null) {
+            if (prevClick !== null) {
                 var prev = document.getElementById(prevClick);
                 prev.style.opacity = "0.5";
             }
@@ -41,55 +41,55 @@ const PropertyTab = () => {
         },
         [currentClick]
     );
-    
-    if(currentClick === "water"){
-        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/WaterEffectMo.mp4" type="video/mp4"/>
-    } else if(currentClick === "thunder"){
-        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/ThunderEffectMo.mp4" type="video/mp4"/>
-    } else if(currentClick === "fire"){
-        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/FireEffectMo.mp4" type="video/mp4"/>
-    } else if(currentClick === "ground"){
-        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/GroundEffectMo.mp4" type="video/mp4"/>
-    } else {shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/FireEffectMo.mp4" type="video/mp4"/>}
+
+    if (currentClick === "water") {
+        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/WaterEffectMo.mp4" type="video/mp4" />
+    } else if (currentClick === "thunder") {
+        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/ThunderEffectMo.mp4" type="video/mp4" />
+    } else if (currentClick === "fire") {
+        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/FireEffectMo.mp4" type="video/mp4" />
+    } else if (currentClick === "ground") {
+        shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/GroundEffectMo.mp4" type="video/mp4" />
+    } else { shoeProperty = <ShoeProperty autoPlay loop muted playsInline src="img/FireEffectMo.mp4" type="video/mp4" /> }
 
 
-    return(
+    return (
         <>
-            <PropertyBox style={{marginTop: "10rem"}}>    
-                <Water id="water">
+            <PropertyBox style={{ marginTop: "10rem" }}>
+                <Water>
                     <button onClick={GetClick}>
-                        <img id="water" src="img/WaterProperty.svg" alt="WaterProperty"/>
+                        <img id="water" src="img/WaterProperty.svg" alt="WaterProperty" />
                     </button>
-                    <WaterTitle src="img/Water.svg" alt="Water"/>
+                    <WaterTitle src="img/Water.svg" alt="Water" />
                 </Water>
-                <Fire id="fire">
+                <Fire>
                     <button onClick={GetClick}>
-                        <img id="fire" src="img/FireProperty.svg" alt="FireProperty"/>
+                        <img id="fire" src="img/FireProperty.svg" alt="FireProperty" />
                     </button>
-                    <FireTitle src="img/Fire.svg" alt="Fire"/>
+                    <FireTitle src="img/Fire.svg" alt="Fire" />
                 </Fire>
-                <Thunder id="thunder">
+                <Thunder>
                     <button onClick={GetClick}>
-                        <img id="thunder" src="img/ThunderProperty.svg" alt="ThunderProperty"/>
+                        <img id="thunder" src="img/ThunderProperty.svg" alt="ThunderProperty" />
                     </button>
-                    <ThunderTitle src="img/Thunder.svg" alt="Thunder"/>
+                    <ThunderTitle src="img/Thunder.svg" alt="Thunder" />
                 </Thunder>
-                <Ground id="ground">
+                <Ground>
                     <button onClick={GetClick}>
-                        <img id="ground" src="img/GroundProperty.svg" alt="GroundProperty"/>
+                        <img id="ground" src="img/GroundProperty.svg" alt="GroundProperty" />
                     </button>
-                    <GroundTitle src="img/Ground.svg" alt="Ground"/>
+                    <GroundTitle src="img/Ground.svg" alt="Ground" />
                 </Ground>
             </PropertyBox>
             <ShoeBox>
-                <Rock1 src="img/Rock1.png" alt="Rock"/>
+                <Rock1 src="img/Rock1.png" alt="Rock" />
                 <Shoe>
                     {shoeProperty}
                 </Shoe>
             </ShoeBox>
         </>
     );
-    
+
 };
 
 const PropertyBox = styled.div`
@@ -127,7 +127,7 @@ const WaterTitle = styled.img`
     width: 4.8rem;
     transition: all 2s ease;
 `
- 
+
 const Thunder = styled.div`
     transition: all 2s ease;
     opacity: 0.5;

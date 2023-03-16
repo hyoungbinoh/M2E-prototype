@@ -2,65 +2,65 @@ import React from "react";
 import styled from "styled-components";
 
 const RoadmapMo = () => {
-    return(
+    return (
         <div>
             <Title>Roadmap</Title>
             <RoadmapBox>
-            <RoadmapWrap>
-            <RoadmapWrapTop>
-                <RoadmapTop style={{height: "276px"}}>
-                    <h3>Q4.2022</h3>
-                    <hr/>
-                    <RoadmapInfo><p>⦁</p><p>UI/UX Design</p></RoadmapInfo>
-                    <RoadmapInfo><p>⦁</p><p>Game Design</p></RoadmapInfo>
-                    <RoadmapInfo><p>⦁</p><p>Launched a Website and social networks</p></RoadmapInfo>
-                    <RoadmapTopSpot style={{top: "9%"}}/>
-                </RoadmapTop>
-                <RoadmapTop style={{height: "310px"}}>
-                    <h3>Q2.2023</h3>
-                    <hr/>
-                    <RoadmapInfo><p>⦁</p><p>In-app marketplace</p></RoadmapInfo>
-                    <RoadmapInfo><p>⦁</p><p>Public round of token sale on launchpads and Whitelists</p></RoadmapInfo>
-                    <RoadmapInfo><p>⦁</p><p>Token listing on DEX/CEX</p></RoadmapInfo>
-                    <RoadmapTopSpot style={{top: "8%"}}/>
-                </RoadmapTop>
-                <RoadmapTop style={{height: "190px"}}>
-                    <h3>Q4.2023</h3>
-                    <hr/>
-                    <RoadmapInfo><p>⦁</p><p>Launching</p></RoadmapInfo>
-                    <RoadmapTopSpot style={{top: "13%"}}/>
-                </RoadmapTop>
-                <RoadmapTop style={{height: "88px"}}>
-                    <h3>Q2.2024</h3>
-                    <hr/>
-                    <RoadmapInfo><p>⦁</p><p>AR Service open</p></RoadmapInfo>
-                    <RoadmapTopSpot style={{top: "28%"}}/>
-                </RoadmapTop>
-            </RoadmapWrapTop>
-            <RoadmapLine/>
-            <RoadmapWrapBottom>
-                <RoadmapBottom style={{height: "310px"}}>
-                    <h3>Q1.2023</h3>
-                    <hr/>
-                    <RoadmapInfo><p>⦁</p><p>marketplace Launching</p></RoadmapInfo>
-                    <RoadmapInfo><p>⦁</p><p>Genesis NFT Presale</p></RoadmapInfo>
-                    <RoadmapBottomSpot style={{top: "8%"}}/>
-                </RoadmapBottom>
-                <RoadmapBottom  style={{height: "213px"}}>
-                    <h3>Q3.2023</h3>
-                    <hr/>
-                    <RoadmapInfo><p>⦁</p><p>Mobile App Launching</p></RoadmapInfo>
-                    <RoadmapInfo><p>⦁</p><p>Beta service</p></RoadmapInfo>
-                    <RoadmapBottomSpot style={{top: "12%"}}/>
-                </RoadmapBottom>
-                <RoadmapBottom  style={{height: "88px"}}>
-                    <h3>Q1.2024</h3>
-                    <hr/>
-                    <RoadmapInfo><p>⦁</p><p>Game play update</p></RoadmapInfo>
-                    <RoadmapBottomSpot style={{top: "28%"}}/>
-                </RoadmapBottom>
-            </RoadmapWrapBottom>
-            </RoadmapWrap>
+                <RoadmapWrap>
+                    <RoadmapWrapTop>
+                        <RoadmapTop style={{ height: "276px" }}>
+                            <h3>Q4.2022</h3>
+                            <hr />
+                            <RoadmapInfo><p>⦁</p><p>UI/UX Design</p></RoadmapInfo>
+                            <RoadmapInfo><p>⦁</p><p>Game Design</p></RoadmapInfo>
+                            <RoadmapInfo><p>⦁</p><p>Launched a Website and social networks</p></RoadmapInfo>
+                            <RoadmapTopSpot style={{ top: "9%" }} />
+                        </RoadmapTop>
+                        <RoadmapTop style={{ height: "310px" }}>
+                            <h3>Q2.2023</h3>
+                            <hr />
+                            <RoadmapInfo><p>⦁</p><p>In-app marketplace</p></RoadmapInfo>
+                            <RoadmapInfo><p>⦁</p><p>Public round of token sale on launchpads and Whitelists</p></RoadmapInfo>
+                            <RoadmapInfo><p>⦁</p><p>Token listing on DEX/CEX</p></RoadmapInfo>
+                            <RoadmapTopSpot style={{ top: "8%" }} />
+                        </RoadmapTop>
+                        <RoadmapTop style={{ height: "190px" }}>
+                            <h3>Q4.2023</h3>
+                            <hr />
+                            <RoadmapInfo><p>⦁</p><p>Launching</p></RoadmapInfo>
+                            <RoadmapTopSpot style={{ top: "13%" }} />
+                        </RoadmapTop>
+                        <RoadmapTop style={{ height: "88px" }}>
+                            <h3>Q2.2024</h3>
+                            <hr />
+                            <RoadmapInfo><p>⦁</p><p>AR Service open</p></RoadmapInfo>
+                            <RoadmapTopSpot style={{ top: "28%" }} />
+                        </RoadmapTop>
+                    </RoadmapWrapTop>
+                    <RoadmapLine />
+                    <RoadmapWrapBottom>
+                        <RoadmapBottom style={{ height: "310px" }}>
+                            <h3>Q1.2023</h3>
+                            <hr />
+                            <RoadmapInfo><p>⦁</p><p>marketplace Launching</p></RoadmapInfo>
+                            <RoadmapInfo><p>⦁</p><p>Genesis NFT Presale</p></RoadmapInfo>
+                            <RoadmapBottomSpot style={{ top: "8%" }} />
+                        </RoadmapBottom>
+                        <RoadmapBottom style={{ height: "213px" }}>
+                            <h3>Q3.2023</h3>
+                            <hr />
+                            <RoadmapInfo><p>⦁</p><p>Mobile App Launching</p></RoadmapInfo>
+                            <RoadmapInfo><p>⦁</p><p>Beta service</p></RoadmapInfo>
+                            <RoadmapBottomSpot style={{ top: "12%" }} />
+                        </RoadmapBottom>
+                        <RoadmapBottom style={{ height: "88px" }}>
+                            <h3>Q1.2024</h3>
+                            <hr />
+                            <RoadmapInfo><p>⦁</p><p>Game play update</p></RoadmapInfo>
+                            <RoadmapBottomSpot style={{ top: "28%" }} />
+                        </RoadmapBottom>
+                    </RoadmapWrapBottom>
+                </RoadmapWrap>
             </RoadmapBox>
         </div>
     );
@@ -147,7 +147,7 @@ const RoadmapInfo = styled.div`
         transition: all 2s ease;
         line-height: 140%;
     }
-` 
+`
 
 const RoadmapTopSpot = styled.div`
     left: -4%;

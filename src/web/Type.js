@@ -1,19 +1,19 @@
 import React from "react"
-import styled, {keyframes} from "styled-components"
+import styled, { keyframes } from "styled-components"
 
 import Slide from "./Slide"
 
-const Type = () =>{
-  return(
+const Type = () => {
+  return (
     <>
-        <Information>
+      <Information>
         <h2>What is StepWAR</h2>
         <p>StepWar is the second generation of P2E application that consists</p>
-        <p style={{marginBottom:"6rem"}}>Fit-fi, Game Fi and Social Fi.</p>
-        </Information>
-        <Slide style={{float: "left"}}/>
-        <Bubble1 src="img/Bubble1.svg" alt="Bubble1" /> 
-        <Bubble2 src="img/Bubble2.svg" alt="Bubble2" />         
+        <p style={{ marginBottom: "6rem" }}>Fit-fi, Game Fi and Social Fi.</p>
+      </Information>
+      <Slide style={{ float: "left" }} />
+      <Bubble1 src="img/Bubble1.svg" alt="Bubble1" />
+      <Bubble2 src="img/Bubble2.svg" alt="Bubble2" />
     </>
   )
 }

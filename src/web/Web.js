@@ -15,68 +15,68 @@ import Footer from "./Footer";
 
 const Web = () => {
 
-    return(
-        <Body>
-          <FullPage duration={900} controls controlsProps={{className: "slide-navigation"}}>
-          <Header/>
-          <Background/>
-          <Slide>
+  return (
+    <Body>
+      <FullPage duration={900} controls controlsProps={{ className: "slide-navigation" }}>
+        <Header />
+        <Background />
+        <Slide>
           <Container>
             <Wrapper>
-              <Main/>
+              <Main />
             </Wrapper>
           </Container>
-          </Slide>
-          <Slide>
+        </Slide>
+        <Slide>
           <Container>
             <Wrapper>
-              <Type/>
+              <Type />
             </Wrapper>
           </Container>
-          </Slide>
-          <Slide>
+        </Slide>
+        <Slide>
           <Container>
             <Wrapper>
-              <Property/>
+              <Property />
             </Wrapper>
           </Container>
-          </Slide>
-          <Slide>
+        </Slide>
+        <Slide>
           <Container>
             <Wrapper>
-              <System/>
+              <System />
             </Wrapper>
           </Container>
-          </Slide>
-          <Slide>
+        </Slide>
+        <Slide>
           <Container>
             <Wrapper>
-              <Token/>
+              <Token />
             </Wrapper>
           </Container>
-          </Slide>
-          <Slide>
+        </Slide>
+        <Slide>
           <Container>
             <Wrapper>
-              <Roadmap/>
+              <Roadmap />
             </Wrapper>
           </Container>
-          </Slide>
-          <Slide>
+        </Slide>
+        <Slide>
           <Container>
             <Wrapper>
-              <Partner/>
+              <Partner />
             </Wrapper>
           </Container>
-          </Slide>
-          <Slide>
+        </Slide>
+        <Slide>
           <Container>
-              <Footer/>
+            <Footer />
           </Container>
-          </Slide>
-          </FullPage>
-        </Body>
-      );
+        </Slide>
+      </FullPage>
+    </Body>
+  );
 }
 
 const Body = styled.div`

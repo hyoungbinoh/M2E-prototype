@@ -2,35 +2,35 @@ import React from "react";
 import styled from "styled-components";
 
 const PartnerTab = () => {
-    return(
+    return (
         <div>
             <Title>Partners</Title>
-            <PartnerWrap style={{marginTop: "8.8rem"}}>
+            <PartnerWrap style={{ marginTop: "8.8rem" }}>
                 <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
                 </PartnerBox>
                 <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
                 </PartnerBox>
                 <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
                 </PartnerBox>
                 <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
                 </PartnerBox>
             </PartnerWrap>
             <PartnerWrap>
                 <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
                 </PartnerBox>
                 <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
                 </PartnerBox>
                 <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
                 </PartnerBox>
                 <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
                 </PartnerBox>
             </PartnerWrap>
         </div>

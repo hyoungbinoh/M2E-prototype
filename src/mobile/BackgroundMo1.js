@@ -1,30 +1,30 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const BackgroundMo1 = () => {
     const [position, setPosition] = useState(0);
 
-    function onScroll(){
+    function onScroll() {
         setPosition(window.scrollY);
     }
 
     const viewport = window.innerHeight
 
     useEffect(() => {
-        window.addEventListener('scroll',onScroll)
-        return() => {
-            window.removeEventListener('scroll',onScroll)
+        window.addEventListener('scroll', onScroll)
+        return () => {
+            window.removeEventListener('scroll', onScroll)
         }
     }, [])
 
-    return(
+    return (
         <Container>
-            <Rock2 src="img/Rock2.svg" alt="Rock2" style={position < viewport ? {opacity: "1", top: "5.55vh"} : {opacity: "0", top: "110vh"}}/>
-            <Stones1 src="img/Stones1.svg" alt="Stones" style={position < viewport ? {opacity: "1", top: "54.5vh"} : {opacity: "0", top: "60vh"}}/>
-            <Rock11 src="img/Rock11.svg" alt="Rock11" style={position < viewport ? {opacity: "1", top: "72vh"} : {opacity: "0", top: "110vh"}}/>
-            <Rock12 src="img/Rock18.svg" alt="Rock18" style={position < viewport ? {top: "97.7vh"} : {top: "102.7vh"}}/>
-            <Rock13 src="img/Rock13.svg" alt="Rock13" style={position < viewport ? {top: "102vh"} : {top: "105vh"}}/>
+            <Rock2 src="img/Rock2.svg" alt="Rock2" style={position < viewport ? { opacity: "1", top: "5.55vh" } : { opacity: "0", top: "110vh" }} />
+            <Stones1 src="img/Stones1.svg" alt="Stones" style={position < viewport ? { opacity: "1", top: "54.5vh" } : { opacity: "0", top: "60vh" }} />
+            <Rock11 src="img/Rock11.svg" alt="Rock11" style={position < viewport ? { opacity: "1", top: "72vh" } : { opacity: "0", top: "110vh" }} />
+            <Rock12 src="img/Rock18.svg" alt="Rock18" style={position < viewport ? { top: "97.7vh" } : { top: "102.7vh" }} />
+            <Rock13 src="img/Rock13.svg" alt="Rock13" style={position < viewport ? { top: "102vh" } : { top: "105vh" }} />
         </Container>
     );
 };

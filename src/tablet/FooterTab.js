@@ -5,49 +5,49 @@ const FooterTab = () => {
   const now = new Date();
   const year = now.getFullYear();
 
-    return(
-        <>
-        <FooterWarp>
-            <FooterBox>
-              <InformationWrap>
-                <Logo src="img/WhiteLogo.svg" alt="WhiteLogo"/>
-                <Information>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem elit ipsum neque, donec justo viverra viverra ac. Nulla non massa, sed nibh proin dui nec, erat est. Placerat feugiat integer amet gravida. Quis diam suspendisse nulla dignissim malesuada eget purus turpis.</Information>
-                <Button>
-                  <p>Email Address</p>
-                  <img src="img/EmailNarrow.svg" alt="EmailNarrow" />
-                </Button>
-                <Copyright>&copy; {year} StepWAR</Copyright>
-              </InformationWrap>
-              <PolicyWrap>
-                <PolicyBox>
-                  <PolicyTitle>Company</PolicyTitle>
-                  <PolicyInfo>Privacy Policy and Terms of Service</PolicyInfo>
-                </PolicyBox>
-                <PolicyBox>
-                  <PolicyTitle>About</PolicyTitle>
-                  <PolicyInfo>Elite Policy</PolicyInfo>
-                </PolicyBox>
-                <PolicyBox>
-                  <PolicyTitle>Careers</PolicyTitle>
-                  <PolicyInfo>Elite Biometrics Privacy Policy</PolicyInfo>
-                </PolicyBox>
-                <PolicyBox>
-                  <PolicyTitle>Press</PolicyTitle>
-                  <PolicyInfo>Elite Financial Privacy Notice</PolicyInfo>
-                </PolicyBox>
-                <PolicyBox>
-                  <PolicyTitle>Notice</PolicyTitle>
-                  <PolicyInfo>Elite Terms of Service</PolicyInfo>
-                </PolicyBox>
-                <PolicyBox>
-                  <PolicyTitle>Company</PolicyTitle>
-                  <PolicyInfo>Elite Trade Desk Terms of Service</PolicyInfo>
-                </PolicyBox>
-              </PolicyWrap>
-            </FooterBox>
-        </FooterWarp>
-        </>
-    )
+  return (
+    <>
+      <FooterWarp>
+        <FooterBox>
+          <InformationWrap>
+            <Logo src="img/WhiteLogo.svg" alt="WhiteLogo" />
+            <Information>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem elit ipsum neque, donec justo viverra viverra ac. Nulla non massa, sed nibh proin dui nec, erat est. Placerat feugiat integer amet gravida. Quis diam suspendisse nulla dignissim malesuada eget purus turpis.</Information>
+            <Button>
+              <p>Email Address</p>
+              <img src="img/EmailNarrow.svg" alt="EmailNarrow" />
+            </Button>
+            <Copyright>&copy; {year} StepWAR</Copyright>
+          </InformationWrap>
+          <PolicyWrap>
+            <PolicyBox>
+              <PolicyTitle>Company</PolicyTitle>
+              <PolicyInfo>Privacy Policy and Terms of Service</PolicyInfo>
+            </PolicyBox>
+            <PolicyBox>
+              <PolicyTitle>About</PolicyTitle>
+              <PolicyInfo>Elite Policy</PolicyInfo>
+            </PolicyBox>
+            <PolicyBox>
+              <PolicyTitle>Careers</PolicyTitle>
+              <PolicyInfo>Elite Biometrics Privacy Policy</PolicyInfo>
+            </PolicyBox>
+            <PolicyBox>
+              <PolicyTitle>Press</PolicyTitle>
+              <PolicyInfo>Elite Financial Privacy Notice</PolicyInfo>
+            </PolicyBox>
+            <PolicyBox>
+              <PolicyTitle>Notice</PolicyTitle>
+              <PolicyInfo>Elite Terms of Service</PolicyInfo>
+            </PolicyBox>
+            <PolicyBox>
+              <PolicyTitle>Company</PolicyTitle>
+              <PolicyInfo>Elite Trade Desk Terms of Service</PolicyInfo>
+            </PolicyBox>
+          </PolicyWrap>
+        </FooterBox>
+      </FooterWarp>
+    </>
+  )
 }
 
 const FooterWarp = styled.footer`

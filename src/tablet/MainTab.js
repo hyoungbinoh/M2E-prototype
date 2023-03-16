@@ -1,46 +1,46 @@
 import React from "react";
-import {useState, useEffect} from "react";
-import styled, {keyframes} from "styled-components";
+import { useState, useEffect } from "react";
+import styled, { keyframes } from "styled-components";
 
-const MainTab = () =>{
+const MainTab = () => {
   const [position, setPosition] = useState(0);
 
-  function onScroll(){
-      setPosition(window.scrollY);
+  function onScroll() {
+    setPosition(window.scrollY);
   }
 
   const viewport = window.innerHeight
 
   useEffect(() => {
-      window.addEventListener('scroll',onScroll)
-      return() => {
-          window.removeEventListener('scroll',onScroll)
-      }
+    window.addEventListener('scroll', onScroll)
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+    }
   }, [])
 
-    return(
-        <div>
-            <Logo src="img/StepWAR.svg" alt="StepWAR"/>
-            <Title>M2E, but Better</Title>
-            <Bubble1 src="img/Bubble1.svg" alt="Bubble1" 
-            style={position < viewport ? {left: "calc(50% - 15rem)", opacity: "1"} : {left: "calc(50% - 20rem)", opacity:"0"}}
-            /> 
-            <Bubble2 src="img/Bubble2.svg" alt="Bubble2" 
-            style={position < viewport ? {left: "calc(50% + 16rem)", opacity: "1"} : {left: "calc(50% + 21rem)", opacity:"0"}}
-            /> 
-            <MainImage src="img/MainImage.svg" alt="MainImage"/>
-            <StoreBox>
-            <Store href="#" >
-                <div><p>Coming soon</p></div> 
-                <img src="img/appstore.svg" alt="App Store"/>
-            </Store>
-            <Store href="#" >
-                <div><p>Coming soon</p></div> 
-                <img src="img/playstore.svg" alt="Google Play"/>
-            </Store>   
-            </StoreBox>
-        </div>
-    );
+  return (
+    <div>
+      <Logo src="img/StepWAR.svg" alt="StepWAR" />
+      <Title>M2E, but Better</Title>
+      <Bubble1 src="img/Bubble1.svg" alt="Bubble1"
+        style={position < viewport ? { left: "calc(50% - 15rem)", opacity: "1" } : { left: "calc(50% - 20rem)", opacity: "0" }}
+      />
+      <Bubble2 src="img/Bubble2.svg" alt="Bubble2"
+        style={position < viewport ? { left: "calc(50% + 16rem)", opacity: "1" } : { left: "calc(50% + 21rem)", opacity: "0" }}
+      />
+      <MainImage src="img/MainImage.svg" alt="MainImage" />
+      <StoreBox>
+        <Store href="#" >
+          <div><p>Coming soon</p></div>
+          <img src="img/appstore.svg" alt="App Store" />
+        </Store>
+        <Store href="#" >
+          <div><p>Coming soon</p></div>
+          <img src="img/playstore.svg" alt="Google Play" />
+        </Store>
+      </StoreBox>
+    </div>
+  );
 };
 
 

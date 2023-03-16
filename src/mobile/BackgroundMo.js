@@ -5,10 +5,10 @@ import BackgroundMo1 from "./BackgroundMo1";
 import BackgroundMo2 from "./BackgroundMo2";
 
 const BackgroundMo = () => {
-    return(
+    return (
         <Container>
-            <BackgroundMo1/>
-            <BackgroundMo2/>
+            <BackgroundMo1 />
+            <BackgroundMo2 />
         </Container>
     );
 };

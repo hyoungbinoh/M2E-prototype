@@ -2,39 +2,39 @@ import React from "react";
 import styled from "styled-components";
 
 const PartnerMo = () => {
-    return(
+    return (
         <div>
             <Title>Partners</Title>
             <PartnerWrap>
                 <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
                 </PartnerBox>
                 <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
-                </PartnerBox>
-            </PartnerWrap>
-            <PartnerWrap>
-                <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
-                </PartnerBox>
-                <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
                 </PartnerBox>
             </PartnerWrap>
             <PartnerWrap>
                 <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
                 </PartnerBox>
                 <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
                 </PartnerBox>
             </PartnerWrap>
-            <PartnerWrap style={{marginBottom:"360px"}}>
+            <PartnerWrap>
                 <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
                 </PartnerBox>
                 <PartnerBox>
-                    <PartnerImg src="img/WhiteLogo.svg" alt="partner"/>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
+                </PartnerBox>
+            </PartnerWrap>
+            <PartnerWrap style={{ marginBottom: "360px" }}>
+                <PartnerBox>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
+                </PartnerBox>
+                <PartnerBox>
+                    <PartnerImg src="img/WhiteLogo.svg" alt="partner" />
                 </PartnerBox>
             </PartnerWrap>
         </div>

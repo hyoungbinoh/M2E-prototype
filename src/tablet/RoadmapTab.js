@@ -2,65 +2,65 @@ import React from "react";
 import styled from "styled-components";
 
 const RoadmapTab = () => {
-    return(
+    return (
         <>
             <Title>Roadmap</Title>
             <RoadmapBox>
-            <RoadmapWrap>
-            <RoadmapWrapTop>
-                <RoadmapTop>
-                    <h3>Q4.2022</h3>
-                    <hr/>
-                    <RoadmapInfo><p>⦁</p><p>UI/UX Design</p></RoadmapInfo>
-                    <RoadmapInfo><p>⦁</p><p>Game Design</p></RoadmapInfo>
-                    <RoadmapInfo><p>⦁</p><p>Launched a Website and social networks</p></RoadmapInfo>
-                    <RoadmapTopSpot/>
-                </RoadmapTop>
-                <RoadmapTop>
-                    <h3>Q2.2023</h3>
-                    <hr/>
-                    <RoadmapInfo><p>⦁</p><p>In-app marketplace</p></RoadmapInfo>
-                    <RoadmapInfo><p>⦁</p><p>Public round of token sale on launchpads and Whitelists</p></RoadmapInfo>
-                    <RoadmapInfo><p>⦁</p><p>Token listing on DEX/CEX</p></RoadmapInfo>
-                    <RoadmapTopSpot/>
-                </RoadmapTop>
-                <RoadmapTop>
-                    <h3>Q4.2023</h3>
-                    <hr/>
-                    <RoadmapInfo><p>⦁</p><p>Launching</p></RoadmapInfo>
-                    <RoadmapTopSpot/>
-                </RoadmapTop>
-                <RoadmapTop>
-                    <h3>Q2.2024</h3>
-                    <hr/>
-                    <RoadmapInfo><p>⦁</p><p>AR Service open</p></RoadmapInfo>
-                    <RoadmapTopSpot/>
-                </RoadmapTop>
-            </RoadmapWrapTop>
-            <RoadmapLine/>
-            <RoadmapWrapBottom>
-                <RoadmapBottom>
-                    <h3>Q1.2023</h3>
-                    <hr/>
-                    <RoadmapInfo><p>⦁</p><p>marketplace Launching</p></RoadmapInfo>
-                    <RoadmapInfo><p>⦁</p><p>Genesis NFT Presale</p></RoadmapInfo>
-                    <RoadmapBottomSpot/>
-                </RoadmapBottom>
-                <RoadmapBottom>
-                    <h3>Q3.2023</h3>
-                    <hr/>
-                    <RoadmapInfo><p>⦁</p><p>Mobile App Launching</p></RoadmapInfo>
-                    <RoadmapInfo><p>⦁</p><p>Beta service</p></RoadmapInfo>
-                    <RoadmapBottomSpot/>
-                </RoadmapBottom>
-                <RoadmapBottom>
-                    <h3>Q1.2024</h3>
-                    <hr/>
-                    <RoadmapInfo><p>⦁</p><p>Game play update</p></RoadmapInfo>
-                    <RoadmapBottomSpot/>
-                </RoadmapBottom>
-            </RoadmapWrapBottom>
-            </RoadmapWrap>
+                <RoadmapWrap>
+                    <RoadmapWrapTop>
+                        <RoadmapTop>
+                            <h3>Q4.2022</h3>
+                            <hr />
+                            <RoadmapInfo><p>⦁</p><p>UI/UX Design</p></RoadmapInfo>
+                            <RoadmapInfo><p>⦁</p><p>Game Design</p></RoadmapInfo>
+                            <RoadmapInfo><p>⦁</p><p>Launched a Website and social networks</p></RoadmapInfo>
+                            <RoadmapTopSpot />
+                        </RoadmapTop>
+                        <RoadmapTop>
+                            <h3>Q2.2023</h3>
+                            <hr />
+                            <RoadmapInfo><p>⦁</p><p>In-app marketplace</p></RoadmapInfo>
+                            <RoadmapInfo><p>⦁</p><p>Public round of token sale on launchpads and Whitelists</p></RoadmapInfo>
+                            <RoadmapInfo><p>⦁</p><p>Token listing on DEX/CEX</p></RoadmapInfo>
+                            <RoadmapTopSpot />
+                        </RoadmapTop>
+                        <RoadmapTop>
+                            <h3>Q4.2023</h3>
+                            <hr />
+                            <RoadmapInfo><p>⦁</p><p>Launching</p></RoadmapInfo>
+                            <RoadmapTopSpot />
+                        </RoadmapTop>
+                        <RoadmapTop>
+                            <h3>Q2.2024</h3>
+                            <hr />
+                            <RoadmapInfo><p>⦁</p><p>AR Service open</p></RoadmapInfo>
+                            <RoadmapTopSpot />
+                        </RoadmapTop>
+                    </RoadmapWrapTop>
+                    <RoadmapLine />
+                    <RoadmapWrapBottom>
+                        <RoadmapBottom>
+                            <h3>Q1.2023</h3>
+                            <hr />
+                            <RoadmapInfo><p>⦁</p><p>marketplace Launching</p></RoadmapInfo>
+                            <RoadmapInfo><p>⦁</p><p>Genesis NFT Presale</p></RoadmapInfo>
+                            <RoadmapBottomSpot />
+                        </RoadmapBottom>
+                        <RoadmapBottom>
+                            <h3>Q3.2023</h3>
+                            <hr />
+                            <RoadmapInfo><p>⦁</p><p>Mobile App Launching</p></RoadmapInfo>
+                            <RoadmapInfo><p>⦁</p><p>Beta service</p></RoadmapInfo>
+                            <RoadmapBottomSpot />
+                        </RoadmapBottom>
+                        <RoadmapBottom>
+                            <h3>Q1.2024</h3>
+                            <hr />
+                            <RoadmapInfo><p>⦁</p><p>Game play update</p></RoadmapInfo>
+                            <RoadmapBottomSpot />
+                        </RoadmapBottom>
+                    </RoadmapWrapBottom>
+                </RoadmapWrap>
             </RoadmapBox>
         </>
     );
@@ -147,7 +147,7 @@ const RoadmapInfo = styled.div`
         transition: all 2s ease;
         line-height: 140%;
     }
-` 
+`
 
 const RoadmapTopSpot = styled.div`
     top: 3.2rem;

@@ -5,10 +5,10 @@ import BackgroundTab1 from "./BackgroundTab1";
 import BackgroundTab2 from "./BackgroundTab2";
 
 const BackgroundTab = () => {
-    return(
+    return (
         <Container>
-            <BackgroundTab1/>
-            <BackgroundTab2/>
+            <BackgroundTab1 />
+            <BackgroundTab2 />
         </Container>
     );
 };

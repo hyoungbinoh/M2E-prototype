@@ -2,31 +2,31 @@ import React from "react";
 import styled from "styled-components";
 
 const Token = () => {
-    return(
-        <div>
-          <Information>
-            <h2>Tokenomics</h2>
-            <p>User-friendly Tokenomics</p>
-            <p>for Sustaining Ecosystem Maintenance.</p>
-          </Information>
-          <TokenWrap>
-            <TokenInfo>
-              <img src="img/SWT.svg" alt="SWT"/>
-              <div>
-                <p>SWT Utility Token</p>
-                <h3>Unlimited supply</h3>
-              </div>
-            </TokenInfo>
-            <TokenInfo>
-              <img src="img/SMT.svg" alt="SMT"/>
-              <div>
-                <p>SMT Governance Token</p>
-                <h3>1,000,000,000 supply</h3>
-              </div>
-            </TokenInfo>
-          </TokenWrap>
-        </div>
-    );
+  return (
+    <div>
+      <Information>
+        <h2>Tokenomics</h2>
+        <p>User-friendly Tokenomics</p>
+        <p>for Sustaining Ecosystem Maintenance.</p>
+      </Information>
+      <TokenWrap>
+        <TokenInfo>
+          <img src="img/SWT.svg" alt="SWT" />
+          <div>
+            <p>SWT Utility Token</p>
+            <h3>Unlimited supply</h3>
+          </div>
+        </TokenInfo>
+        <TokenInfo>
+          <img src="img/SMT.svg" alt="SMT" />
+          <div>
+            <p>SMT Governance Token</p>
+            <h3>1,000,000,000 supply</h3>
+          </div>
+        </TokenInfo>
+      </TokenWrap>
+    </div>
+  );
 };
 
 const Information = styled.div`

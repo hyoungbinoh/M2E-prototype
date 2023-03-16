@@ -13,57 +13,57 @@ import HeaderTab from "./HeaderTab"
 import BackgroundTab from "./BackgroundTab"
 
 const Tablet = () => {
-    return(
-        <Body>
-          <BackgroundTab/>
-          <HeaderTab/>
-            <Container>
-                <Wrapper>
-                    <MainTab/>
-                </Wrapper>
-            </Container>
-            <ContainerTab style={{height:"100rem"}}>
-              <Wrapper>
-                <TypeTab/>
-              </Wrapper>
-            </ContainerTab>
-            <ContainerTab style={{height:"65rem"}}>
-              <Wrapper>
-                <PropertyTab/>
-              </Wrapper>
-            </ContainerTab>
-            <ContainerTab style={{height:"70rem"}}>
-              <Wrapper>
-                <SystemTab/>
-              </Wrapper>
-            </ContainerTab>
-            <ContainerTab style={{height:"65rem"}}>
-              <Wrapper>
-                <TokenTab/>
-              </Wrapper>
-            </ContainerTab>
-            <ContainerTab style={{height:"105rem"}}>
-              <Wrapper>
-                <RoadmapTab/>
-              </Wrapper>
-            </ContainerTab>
-            <ContainerTab style={{height:"100rem"}}>
-              <Wrapper style={{top: "25%"}}>
-                <PartnerTab/>
-              </Wrapper>
-              <ToTop onClick={() => {
-                        window.scrollTo({
-                            top: 0, left: 0, behavior: 'smooth'
-                        })
-                    }}>
-                        <img src="img/MoveTop.svg" alt="top-btn"/>
-                </ToTop>
-            </ContainerTab>
-            <ContainerTab style={{height:"47.7rem"}}>
-              <FooterTab/>
-            </ContainerTab>
-        </Body>
-    )
+  return (
+    <Body>
+      <BackgroundTab />
+      <HeaderTab />
+      <Container>
+        <Wrapper>
+          <MainTab />
+        </Wrapper>
+      </Container>
+      <ContainerTab style={{ height: "100rem" }}>
+        <Wrapper>
+          <TypeTab />
+        </Wrapper>
+      </ContainerTab>
+      <ContainerTab style={{ height: "65rem" }}>
+        <Wrapper>
+          <PropertyTab />
+        </Wrapper>
+      </ContainerTab>
+      <ContainerTab style={{ height: "70rem" }}>
+        <Wrapper>
+          <SystemTab />
+        </Wrapper>
+      </ContainerTab>
+      <ContainerTab style={{ height: "65rem" }}>
+        <Wrapper>
+          <TokenTab />
+        </Wrapper>
+      </ContainerTab>
+      <ContainerTab style={{ height: "105rem" }}>
+        <Wrapper>
+          <RoadmapTab />
+        </Wrapper>
+      </ContainerTab>
+      <ContainerTab style={{ height: "100rem" }}>
+        <Wrapper style={{ top: "25%" }}>
+          <PartnerTab />
+        </Wrapper>
+        <ToTop onClick={() => {
+          window.scrollTo({
+            top: 0, left: 0, behavior: 'smooth'
+          })
+        }}>
+          <img src="img/MoveTop.svg" alt="top-btn" />
+        </ToTop>
+      </ContainerTab>
+      <ContainerTab style={{ height: "47.7rem" }}>
+        <FooterTab />
+      </ContainerTab>
+    </Body>
+  )
 }
 
 const Body = styled.div`

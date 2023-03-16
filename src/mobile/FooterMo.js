@@ -5,34 +5,34 @@ const FooterMo = () => {
   const now = new Date();
   const year = now.getFullYear();
 
-    return(
-        <FooterWarp>
-            <FooterBox> 
-              <PolicyWrap>
-                <Logo src="img/WhiteLogo.svg" alt="WhiteLogo"/>
-                <PolicyBox>
-                  <PolicyTitle>Company</PolicyTitle>
-                  <PolicyInfo>Privacy Policy and Terms of Service</PolicyInfo>
-                </PolicyBox>
-                <PolicyBox>
-                  <PolicyTitle>About</PolicyTitle>
-                  <PolicyInfo>Elite Policy</PolicyInfo>
-                </PolicyBox>
-                <PolicyBox>
-                  <PolicyTitle>Careers</PolicyTitle>
-                  <PolicyInfo>Elite Biometrics Privacy Policy</PolicyInfo>
-                </PolicyBox>
-              </PolicyWrap>
-              <InformationWrap>
-                <Button>
-                  <p>Email Address</p>
-                  <img src="img/EmailNarrow.svg" alt="EmailNarrow" />
-                </Button>
-                <Copyright>&copy; {year} StepWAR</Copyright>
-              </InformationWrap>
-            </FooterBox>
-        </FooterWarp>
-    )
+  return (
+    <FooterWarp>
+      <FooterBox>
+        <PolicyWrap>
+          <Logo src="img/WhiteLogo.svg" alt="WhiteLogo" />
+          <PolicyBox>
+            <PolicyTitle>Company</PolicyTitle>
+            <PolicyInfo>Privacy Policy and Terms of Service</PolicyInfo>
+          </PolicyBox>
+          <PolicyBox>
+            <PolicyTitle>About</PolicyTitle>
+            <PolicyInfo>Elite Policy</PolicyInfo>
+          </PolicyBox>
+          <PolicyBox>
+            <PolicyTitle>Careers</PolicyTitle>
+            <PolicyInfo>Elite Biometrics Privacy Policy</PolicyInfo>
+          </PolicyBox>
+        </PolicyWrap>
+        <InformationWrap>
+          <Button>
+            <p>Email Address</p>
+            <img src="img/EmailNarrow.svg" alt="EmailNarrow" />
+          </Button>
+          <Copyright>&copy; {year} StepWAR</Copyright>
+        </InformationWrap>
+      </FooterBox>
+    </FooterWarp>
+  )
 }
 
 const FooterWarp = styled.footer`

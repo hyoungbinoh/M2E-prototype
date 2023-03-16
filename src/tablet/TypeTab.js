@@ -1,77 +1,77 @@
-import React, {Suspense} from "react"
+import React, { Suspense } from "react"
 import styled from "styled-components"
-import {Canvas} from "@react-three/fiber"
+import { Canvas } from "@react-three/fiber"
 import WalkerShoe from "../component/WalkerShoe";
 import JoggerShoe from "../component/JoggerShoe";
 import RunnerShoe from "../component/RunnerShoe";
 import AllRounderShoe from "../component/AllRounerderShoe";
 
-const TypeTab = () =>{
-  return(
+const TypeTab = () => {
+  return (
     <>
       <Information>
         <h2>What is StepWAR</h2>
-        <p>StepWar is the second generation of P2E application </p> 
-        <p style={{marginBottom:"2.5rem"}}>that consists Fit-fi, Game Fi and Social Fi.</p>
+        <p>StepWar is the second generation of P2E application </p>
+        <p style={{ marginBottom: "2.5rem" }}>that consists Fit-fi, Game Fi and Social Fi.</p>
       </Information>
       <Container>
         <Wrapper>
-        <InfoBox>
-          <CanvasWrap>
-            <Canvas>
-              <Suspense fallback={null}>
-                <WalkerShoe/>
-              </Suspense>
-            </Canvas>
-          </CanvasWrap>
-          <ShoeInfo>
-            <ShoeType src="img/Walker.svg" alt="Walker" style={{width: "7.8rem"}}/>
-            <ShoeDistance src="img/1-5km.svg" alt="1-5km/h" style={{width: "9.15rem"}}/>
-          </ShoeInfo>
-        </InfoBox>
-        <InfoBox>
-          <CanvasWrap>
-            <Canvas>
-              <Suspense fallback={null}>
-                <RunnerShoe/>
-              </Suspense>
-            </Canvas>
-          </CanvasWrap>
-          <ShoeInfo>
-            <ShoeType src="img/Runner.svg" alt="Runner" style={{width: "9.34rem"}}/>
-            <ShoeDistance src="img/8-18km.svg" alt="8-18km/h" style={{width: "11.67rem"}}/>
-          </ShoeInfo>
-        </InfoBox>
+          <InfoBox>
+            <CanvasWrap>
+              <Canvas>
+                <Suspense fallback={null}>
+                  <WalkerShoe />
+                </Suspense>
+              </Canvas>
+            </CanvasWrap>
+            <ShoeInfo>
+              <ShoeType src="img/Walker.svg" alt="Walker" style={{ width: "7.8rem" }} />
+              <ShoeDistance src="img/1-5km.svg" alt="1-5km/h" style={{ width: "9.15rem" }} />
+            </ShoeInfo>
+          </InfoBox>
+          <InfoBox>
+            <CanvasWrap>
+              <Canvas>
+                <Suspense fallback={null}>
+                  <RunnerShoe />
+                </Suspense>
+              </Canvas>
+            </CanvasWrap>
+            <ShoeInfo>
+              <ShoeType src="img/Runner.svg" alt="Runner" style={{ width: "9.34rem" }} />
+              <ShoeDistance src="img/8-18km.svg" alt="8-18km/h" style={{ width: "11.67rem" }} />
+            </ShoeInfo>
+          </InfoBox>
         </Wrapper>
         <Wrapper>
-        <InfoBox>
-          <CanvasWrap >
-            <Canvas>
-              <Suspense fallback={null}>
-                <JoggerShoe/>
-              </Suspense>
-            </Canvas>
-          </CanvasWrap>
-          <ShoeInfo>
-            <JoggerType src="img/Jogger.svg" alt="Jogger" style={{width: "8.12rem"}}/>
-            <JoggerDistance src="img/5-10km.svg" alt="5-10km/h" style={{width: "10.23rem"}}/>
-          </ShoeInfo>
-        </InfoBox>
-        <InfoBox>
-          <CanvasWrap>
-            <Canvas>
-              <Suspense fallback={null}>
-                <AllRounderShoe/>
-              </Suspense>
-            </Canvas>
-          </CanvasWrap>
-          <ShoeInfo>
-            <ShoeType src="img/AllRounder.svg" alt="AllRounder" style={{width: "13.72rem"}}/>
-            <ShoeDistance src="img/1-18km.svg" alt="1-18km/h" style={{width: "9.91rem"}}/>
-          </ShoeInfo>
-        </InfoBox>
+          <InfoBox>
+            <CanvasWrap >
+              <Canvas>
+                <Suspense fallback={null}>
+                  <JoggerShoe />
+                </Suspense>
+              </Canvas>
+            </CanvasWrap>
+            <ShoeInfo>
+              <JoggerType src="img/Jogger.svg" alt="Jogger" style={{ width: "8.12rem" }} />
+              <JoggerDistance src="img/5-10km.svg" alt="5-10km/h" style={{ width: "10.23rem" }} />
+            </ShoeInfo>
+          </InfoBox>
+          <InfoBox>
+            <CanvasWrap>
+              <Canvas>
+                <Suspense fallback={null}>
+                  <AllRounderShoe />
+                </Suspense>
+              </Canvas>
+            </CanvasWrap>
+            <ShoeInfo>
+              <ShoeType src="img/AllRounder.svg" alt="AllRounder" style={{ width: "13.72rem" }} />
+              <ShoeDistance src="img/1-18km.svg" alt="1-18km/h" style={{ width: "9.91rem" }} />
+            </ShoeInfo>
+          </InfoBox>
         </Wrapper>
-      </Container>     
+      </Container>
     </>
   )
 }
